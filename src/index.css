@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+[data-theme='dark'] {
+  --background: #2c2b2b;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: #192734;
+  --background-secondary: #404040;
+}
+
+[data-theme='orchid'] {
+  --background: #4cbfa6;
+  --text-primary: #482673;
+  --text-secondary: #ed0b70;
+  --accent: #f6ebf4;
+  --background-secondary: #1be1e5;
+}
+
+[data-theme='lemon-lime'] {
+  --background:  #abd699;
+  --text-primary: #000000;
+  --text-secondary: #16123f;
+  --accent: #ffe26a;
+  --background-secondary: #c7ddcc;
+}
+
+[data-theme='light'] {
+  --background:  #e4e5f1;
+  --text-primary: #000000;
+  --text-secondary: #16123f;
+  --accent: #ffe26a;
+  --background-secondary: #8a8cb8;
+}
+
+
