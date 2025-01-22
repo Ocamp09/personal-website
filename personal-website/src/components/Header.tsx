@@ -8,10 +8,37 @@ const Header = () => {
     <>
       <div className="header">
         <div className="header-items">
-          <h3>Owen Campbell</h3>
+          <div className="header-start">
+            <span
+              className="home-name"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Owen Campbell
+            </span>
+          </div>
+          <div className="header-nav">{/* <p>button here</p> */}</div>
           <div className="header-icons">
-            <FaGithub size={32} />
-            <FaLinkedin size={32} />
+            <button
+              className="icon-button"
+              onClick={() => {
+                window.open("https://github.com/Ocamp09");
+              }}
+            >
+              <FaGithub size={28} />
+            </button>
+            <button
+              className="icon-button"
+              onClick={() => {
+                window.open("https://www.linkedin.com/in/owen-campbell-se/");
+              }}
+            >
+              <FaLinkedin size={28} />
+            </button>
             {/* <LuSun size={32} color="yellow" fill="#242424" /> */}
           </div>
         </div>

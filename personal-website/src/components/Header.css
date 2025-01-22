@@ -1,18 +1,51 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  padding: 10px 16px;
-  color: #f1f1f1;
+  margin-left: 0;
+  padding: 1rem 1rem 0rem 1rem;
+  background-color: rgb(36 36 36 / 50%);
+  width: 98%;
+  max-width: 1280px;
+  backdrop-filter: blur(10px);
 }
 
 .header-items {
   display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header-start {
+  width: 25%;
+  padding-left: 0;
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  width: 60%;
 }
 
 .header-icons {
   display: flex;
-  padding-left: 2rem;
-  align-items: center;
   justify-content: flex-end;
-  width: 75%;
+  width: 15%;
+  padding-right: 0.25rem;
+}
+
+.home-name {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.home-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.icon-button {
+  background-color: #242424;
+  width: 3rem;
+  height: 3rem;
+  padding: 0rem;
 }

@@ -7,29 +7,9 @@ function App() {
     <>
       <Header></Header>
       <About></About>
+      {/* <About></About>
       <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
-      <About></About>
+      <About></About> */}
     </>
   );
 }
