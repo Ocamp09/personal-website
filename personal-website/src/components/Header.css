@@ -1,0 +1,18 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+  color: #f1f1f1;
+}
+
+.header-items {
+  display: flex;
+}
+
+.header-icons {
+  display: flex;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+  width: 75%;
+}
