@@ -3,7 +3,7 @@
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  width: 18rem;
+  width: 16rem;
   height: 200px;
   border-radius: 10px;
   display: flex;
@@ -26,4 +26,8 @@
 
 .buttons:hover {
   color: #646cff;
+}
+
+.date {
+  padding: 0px 0px 0px 0px;
 }
