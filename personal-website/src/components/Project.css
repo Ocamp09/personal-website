@@ -1,5 +1,5 @@
 .project {
-  background-color: #181818;
+  background-color: var(--dark-panels);
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -19,13 +19,13 @@
 }
 
 .buttons {
-  background-color: #252525;
-  border: 2px solid #2c2c2c;
+  background-color: var(--dark-background-buttons);
+  border: 2px solid var(--dark-background-buttons-border);
   padding: 6px 10px;
 }
 
 .buttons:hover {
-  color: #646cff;
+  color: var(--text-primary);
 }
 
 .date {

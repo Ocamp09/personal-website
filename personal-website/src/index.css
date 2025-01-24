@@ -15,8 +15,11 @@
   --dark-background: #111;
   --dark-background-blur: rgb(17, 17, 17, 0.5);
   --dark-background-buttons: #252525;
-  --dark-background-buttons-border: #2c2c2c
-  --text-main: #646cff;
+  --dark-background-buttons-border: #2c2c2c;
+
+  --dark-panels: #181818;
+  --text-primary: #646cff;
+  --text-secondary: #ccc;
 }
 
 a {
