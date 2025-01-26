@@ -11,7 +11,10 @@ interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = ({ key, project }) => {
-  console.log("proj prop", project.name);
+  if (project.description == undefined) {
+    project.description = "See the Repo's README for more info";
+  }
+
   return (
     <>
       <div className="project" key={key}>
@@ -26,7 +29,7 @@ const Project: React.FC<ProjectProps> = ({ key, project }) => {
               window.open(project.repo);
             }}
           >
-            Source
+            Repo
           </button>
         </div>
         <p className="date">Last updated: 2025</p>
