@@ -5,16 +5,29 @@ const About = () => {
     <>
       <div className="about">
         <h1 className="header-text">Hi, I'm Owen!</h1>
-        <p className="bio-text">
-          I am a software engineer, learner, and love most things tech. I
-          appreciate constructive criticism and am constantly trying to improve.
-          In fact, give me any <a>feedback</a> you want, from this site to my
-          skillset to if I use the wrong fonts!
-        </p>
-        <p className="bio-text">
-          I enjoy woodworking, spending time outdoors, RockBand, reading, board
-          games, and spending time with my wife and family
-        </p>
+        <div className="info">
+          <p className="info-text">Software Developer</p>
+          <p className="info-text">owen19campbell@gmail.com</p>
+          <p className="info-text">(740)-319-9192</p>
+          <p className="info-text">Westerville, OH</p>
+        </div>
+        <div className="about-desc">
+          <p className="bio-text">
+            I am a software engineer, learner, and love most things tech. I
+            appreciate constructive criticism and am constantly trying to
+            improve my development skills.
+          </p>
+          <p className="bio-text">
+            In my freetime enjoy coding, woodworking, spending time outdoors,
+            RockBand, reading, board games, and spending time with my wife and
+            family
+          </p>
+
+          <p>
+            Feel free to email me any feedback, or if you are interested in my
+            skills!
+          </p>
+        </div>
       </div>
     </>
   );
