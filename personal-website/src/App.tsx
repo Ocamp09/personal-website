@@ -9,6 +9,10 @@ interface Project {
   name: string;
   repo: string;
   description: string;
+  updated: string;
+  publication: string;
+  about: string;
+  demo: string;
 }
 
 function App() {

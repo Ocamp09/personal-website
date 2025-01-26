@@ -1,22 +1,37 @@
 {
   "projects": [
     {
-      "name": "This site",
+      "name": "This site!",
       "description": "A personal website designed to get feedback and improve my skills",
-      "repo": "https://github.com/Ocamp09/personal-website"
+      "repo": "https://github.com/Ocamp09/personal-website",
+      "updated": "Jan 2025"
     },
     {
-      "name": "That site",
-      "repo": "https://github.com/Ocamp09"
+      "name": "Compassion Translator Portal",
+      "description": "A project I worked on as a Summer intern, created from scratch",
+      "demo": "https://youtu.be/HSl--roXX6U",
+      "updated": "Aug 2022"
     },
     {
-      "name": "This site",
-      "description": "A personal website designed to get feedback and improve my skills",
-      "repo": "https://github.com/Ocamp09/personal-website"
+      "name": "My Master's Thesis",
+      "description": "A blockchain based healthcare transportation system w/ React UI",
+      "repo": "https://github.com/sbhunia/scefsta",
+      "demo": "https://youtu.be/sahVAYYfPXU",
+      "publication": "https://ieeexplore.ieee.org/document/10553424",
+      "updated": "May 2024"
     },
     {
-      "name": "That site",
-      "repo": "https://github.com/Ocamp09"
+      "name": "Web Services Final Project",
+      "description": "A final project for a class using OAuth, CAS, PhP, Laravel, Lambda, and AWS Dynamo",
+      "repo": "https://github.com/Ocamp09/school-code/tree/main/cse451-campbeo2-web-main/L_final",
+      "demo": "https://youtu.be/TtXr-W1J9Nk",
+      "updated": "May 2023"
+    },
+    {
+      "name": "My First Website!",
+      "description": "The first website I ever made in an intro web dev class",
+      "repo": "https://github.com/Ocamp09/school-code/tree/main/cse383_projects-master/finalProject",
+      "updated": "May 2021"
     }
   ]
 }
