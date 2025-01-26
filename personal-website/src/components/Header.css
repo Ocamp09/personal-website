@@ -3,7 +3,7 @@
   top: 0;
   margin-left: 0;
   padding: 1rem 1rem 0rem 1rem;
-  background-color: rgb(36 36 36 / 50%);
+  background-color: var(--dark-background-blur);
   width: 98%;
   max-width: 1280px;
   backdrop-filter: blur(10px);
@@ -44,7 +44,7 @@
 }
 
 .icon-button {
-  background-color: #242424;
+  background-color: var(--dark-background);
   width: 3rem;
   height: 3rem;
   padding: 0rem;

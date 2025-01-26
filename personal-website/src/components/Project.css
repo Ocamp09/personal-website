@@ -1,0 +1,58 @@
+.project {
+  background-color: var(--dark-panels);
+  border: 1px solid var(--dark-background-buttons);
+  padding: 1rem 1rem 1rem 1rem;
+  width: 16rem;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.project-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons {
+  background-color: var(--dark-background-buttons);
+  border: 2px solid var(--dark-background-buttons-border);
+  padding: 6px 10px;
+}
+
+.buttons:hover {
+  color: var(--text-primary);
+}
+
+.date {
+  padding: 1rem 0px 0px 0px;
+  color: var(--text-secondary);
+}
+
+.name-div {
+  height: 55px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1.5em;
+  /* max-height: 2em; */
+}
+
+.name {
+  margin-top: 15px;
+  margin-block-start: 0em;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+  height: 52px;
+}
+
+p {
+  margin-block-start: 0em;
+}
