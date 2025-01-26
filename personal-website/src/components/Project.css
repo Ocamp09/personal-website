@@ -1,15 +1,13 @@
 .project {
   background-color: var(--dark-panels);
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   width: 16rem;
   height: 200px;
   border-radius: 10px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly; */
 }
 
 .project-links {
@@ -29,5 +27,15 @@
 }
 
 .date {
-  padding: 0px 0px 0px 0px;
+  padding: 1rem 0px 0px 0px;
+  color: var(--text-secondary);
+}
+
+.name {
+  margin-top: 15px;
+  margin-block-start: 0em;
+  color: var(--text-primary);
+}
+p {
+  margin-block-start: 0em;
 }

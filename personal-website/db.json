@@ -2,7 +2,21 @@
   "projects": [
     {
       "name": "This site",
-      "repo": "github.com"
+      "description": "A personal website designed to get feedback and improve my skills",
+      "repo": "https://github.com/Ocamp09/personal-website"
+    },
+    {
+      "name": "That site",
+      "repo": "https://github.com/Ocamp09"
+    },
+    {
+      "name": "This site",
+      "description": "A personal website designed to get feedback and improve my skills",
+      "repo": "https://github.com/Ocamp09/personal-website"
+    },
+    {
+      "name": "That site",
+      "repo": "https://github.com/Ocamp09"
     }
   ]
 }
