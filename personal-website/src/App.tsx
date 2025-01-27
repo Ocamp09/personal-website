@@ -51,7 +51,7 @@ function App() {
         {showAbout && <About></About>}
         <span
           className="card"
-          id="projects"
+          id="project-button"
           onClick={() => {
             setShowProjects(!showProjects);
           }}
