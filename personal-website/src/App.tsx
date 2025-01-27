@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Project from "./components/Project";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Document } from "react-pdf";
 
 interface Project {
   name: string;
