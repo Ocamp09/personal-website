@@ -8,7 +8,6 @@ const About = () => {
         <div className="info">
           <p className="info-text">Software Developer</p>
           <p className="info-text">owen19campbell@gmail.com</p>
-          <p className="info-text">(740)-319-9192</p>
           <p className="info-text">Westerville, OH</p>
         </div>
         <div className="about-desc">
