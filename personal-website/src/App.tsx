@@ -58,7 +58,7 @@ function App() {
             setShowProjects(!showProjects);
           }}
         >
-          - Projects -
+          <hr className="divider" />- Projects -
         </span>
         {showProjects && (
           <div className="projects">
@@ -74,7 +74,7 @@ function App() {
             setShowResume(!showResume);
           }}
         >
-          - Resume -
+          <hr className="divider" />- Resume -
         </span>
         {showResume && (
           <embed className="resume" src="Owen_C_Resume_2025.pdf" />
