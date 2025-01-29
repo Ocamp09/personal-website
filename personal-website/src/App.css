@@ -11,8 +11,7 @@
 
 .body {
   width: 70%;
-  margin-left: 300px; /* Add left margin equal to the sidebar width */
-  margin-right: auto;
+  margin-left: 265px; /* Add left margin equal to the sidebar width */
   display: flex;
   flex-direction: column;
   padding-bottom: 5rem;
