@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Project from "./components/Project";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Sidebar from "./components/Sidebar";
 
 interface Project {
   name: string;
@@ -37,6 +38,7 @@ function App() {
   return (
     <>
       <Header></Header>
+      <Sidebar></Sidebar>
       <div className="spacer"></div>
       <div className="body">
         <span

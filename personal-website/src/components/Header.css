@@ -49,6 +49,11 @@
   margin-left: 0.5rem;
 }
 
+.nav-item:focus {
+  outline: none;
+  color: var(--text-primary);
+}
+
 .nav-item::selection {
   border: none;
 }
