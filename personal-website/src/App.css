@@ -11,7 +11,7 @@
 
 .body {
   width: 70%;
-  margin-left: 265px; /* Add left margin equal to the sidebar width */
+  margin-left: 265px;
   display: flex;
   flex-direction: column;
   padding-bottom: 5rem;
@@ -67,7 +67,39 @@
 
 @media screen and (max-width: 1200px) {
   .body {
-    margin-left: auto; /* Reset margin for smaller screens */
+    margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.sidebar {
+  background: var(--dark-background);
+  bottom: 0;
+  display: block;
+  height: 100vh;
+  width: 300px;
+  left: -35px;
+  overflow-y: auto;
+  padding-left: calc(50vw - var(--layout-width) / 2);
+  position: fixed;
+  top: 115px;
+  z-index: 11;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.timeline {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .timeline {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
   }
 }

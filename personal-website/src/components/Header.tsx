@@ -74,6 +74,24 @@ const Header = () => {
             >
               Resume
             </button>
+            <button
+              id="timeline-nav"
+              className="nav-item"
+              onClick={() => {
+                let div = document.getElementById("timeline-button");
+
+                if (div) {
+                  var topPos = div.offsetTop;
+
+                  window.scrollTo({
+                    top: topPos - 70,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+            >
+              My Timeline
+            </button>
           </div>
           {/* <div className="hamburger-menu">
             <button

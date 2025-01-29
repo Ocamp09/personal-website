@@ -108,3 +108,13 @@
     display: none;
   }
 }
+
+#timeline-nav {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  #timeline-nav {
+    display: block;
+  }
+}

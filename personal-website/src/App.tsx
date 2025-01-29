@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Project from "./components/Project";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import Sidebar from "./components/Sidebar";
+import Timeline from "./components/Timeline";
 
 interface Project {
   name: string;
@@ -21,6 +21,7 @@ function App() {
   const [showAbout, setShowAbout] = useState(true);
   const [showProjects, setShowProjects] = useState(true);
   const [showResume, setShowResume] = useState(true);
+  const [showTimeline, setShowTimeline] = useState(true);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -38,7 +39,9 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Sidebar></Sidebar>
+      <div className="sidebar">
+        <Timeline></Timeline>
+      </div>
       <div className="spacer"></div>
       <div className="body">
         <span
@@ -68,7 +71,6 @@ function App() {
           </div>
         )}
         <div className="resume-div">
-          {" "}
           <span
             className="card"
             id="resume"
@@ -81,6 +83,19 @@ function App() {
           {showResume && (
             <embed className="resume" src="Owen_C_Resume_2025.pdf" />
           )}
+        </div>
+
+        <div className="timeline">
+          <span
+            className="card"
+            id="timeline-button"
+            onClick={() => {
+              setShowTimeline(!showTimeline);
+            }}
+          >
+            <hr className="divider" />- My Timeline -
+          </span>
+          {showTimeline && <Timeline></Timeline>}
         </div>
       </div>
     </>

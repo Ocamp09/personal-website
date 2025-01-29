@@ -32,10 +32,17 @@
   .info {
     flex-direction: column;
   }
+
+  .about-desc {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .header-text {
     font-size: 2rem;
+  }
+  .about-desc {
+    width: 100%;
   }
 }
