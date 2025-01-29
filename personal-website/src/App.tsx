@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Project from "./components/Project";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Sidebar from "./components/Sidebar";
 
 interface Project {
   name: string;
@@ -17,6 +18,9 @@ interface Project {
 
 function App() {
   const [projects, setProjects] = useState([]);
+  const [showAbout, setShowAbout] = useState(true);
+  const [showProjects, setShowProjects] = useState(true);
+  const [showResume, setShowResume] = useState(true);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -34,16 +38,47 @@ function App() {
   return (
     <>
       <Header></Header>
+      <Sidebar></Sidebar>
       <div className="spacer"></div>
       <div className="body">
-        <h3 className="card">- About me - </h3>
-        <About></About>
-        <h3 className="card">- Projects - </h3>
-        <div className="projects">
-          {projects.map((project) => (
-            <Project key={project} project={project} />
-          ))}
-        </div>
+        <span
+          className="card"
+          id="about"
+          onClick={() => {
+            setShowAbout(!showAbout);
+          }}
+        >
+          - About Me -
+        </span>
+        {showAbout && <About></About>}
+        <span
+          className="card"
+          id="project-button"
+          onClick={() => {
+            setShowProjects(!showProjects);
+          }}
+        >
+          <hr className="divider" />- Projects -
+        </span>
+        {showProjects && (
+          <div className="projects">
+            {projects.map((project) => (
+              <Project key={project} project={project} />
+            ))}
+          </div>
+        )}
+        <span
+          className="card"
+          id="resume"
+          onClick={() => {
+            setShowResume(!showResume);
+          }}
+        >
+          <hr className="divider" />- Resume -
+        </span>
+        {showResume && (
+          <embed className="resume" src="Owen_C_Resume_2025.pdf" />
+        )}
       </div>
     </>
   );

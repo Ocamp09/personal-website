@@ -21,7 +21,59 @@ const Header = () => {
               Owen Campbell
             </span>
           </div>
-          <div className="header-nav">{/* <p>button here</p> */}</div>
+          <div className="header-nav">
+            <button
+              className="nav-item"
+              onClick={() => {
+                let div = document.getElementById("about");
+
+                if (div) {
+                  var topPos = div.offsetTop;
+
+                  window.scrollTo({
+                    top: topPos - 100,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+            >
+              About Me
+            </button>
+            <button
+              className="nav-item"
+              onClick={() => {
+                const div = document.getElementById("project-button");
+
+                if (div) {
+                  var topPos = div.offsetTop;
+
+                  window.scrollTo({
+                    top: topPos - 70,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+            >
+              Projects
+            </button>
+            <button
+              className="nav-item"
+              onClick={() => {
+                let div = document.getElementById("resume");
+
+                if (div) {
+                  var topPos = div.offsetTop;
+
+                  window.scrollTo({
+                    top: topPos - 70,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+            >
+              Resume
+            </button>
+          </div>
           <div className="header-icons">
             <button
               className="icon-button"

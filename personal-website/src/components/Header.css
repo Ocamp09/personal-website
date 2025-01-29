@@ -43,6 +43,21 @@
   cursor: pointer;
 }
 
+.nav-item {
+  background-color: var(--dark-background-blur);
+  border: none;
+  margin-left: 0.5rem;
+}
+
+.nav-item:focus {
+  outline: none;
+  color: var(--text-primary);
+}
+
+.nav-item::selection {
+  border: none;
+}
+
 .icon-button {
   background-color: var(--dark-background);
   width: 3rem;
