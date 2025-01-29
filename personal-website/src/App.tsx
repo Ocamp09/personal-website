@@ -67,18 +67,21 @@ function App() {
             ))}
           </div>
         )}
-        <span
-          className="card"
-          id="resume"
-          onClick={() => {
-            setShowResume(!showResume);
-          }}
-        >
-          <hr className="divider" />- Resume -
-        </span>
-        {showResume && (
-          <embed className="resume" src="Owen_C_Resume_2025.pdf" />
-        )}
+        <div className="resume-div">
+          {" "}
+          <span
+            className="card"
+            id="resume"
+            onClick={() => {
+              setShowResume(!showResume);
+            }}
+          >
+            <hr className="divider" />- Resume -
+          </span>
+          {showResume && (
+            <embed className="resume" src="Owen_C_Resume_2025.pdf" />
+          )}
+        </div>
       </div>
     </>
   );

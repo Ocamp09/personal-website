@@ -55,6 +55,12 @@
   height: 48rem;
 }
 
+@media screen and (max-width: 900px) {
+  .resume-div {
+    display: none;
+  }
+}
+
 .divider {
   border: 0;
   border-top: 0.25px solid var(--text-secondary);

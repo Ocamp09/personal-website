@@ -57,6 +57,7 @@ const Header = () => {
               Projects
             </button>
             <button
+              id="resume-nav"
               className="nav-item"
               onClick={() => {
                 let div = document.getElementById("resume");

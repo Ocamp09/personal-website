@@ -66,9 +66,13 @@
   padding: 0rem;
 }
 
-.hamburger-menu {
-  display: none;
+.icon-button:focus {
+  outline: none;
 }
+
+/* .hamburger-menu {
+  display: none;
+} */
 
 @media screen and (max-width: 700px) {
   .header-nav {
@@ -95,6 +99,12 @@
     font-size: 20px;
   }
   .header-start {
-    width: 50%;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #resume-nav {
+    display: none;
   }
 }
