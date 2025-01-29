@@ -48,7 +48,7 @@ const Header = () => {
                   var topPos = div.offsetTop;
 
                   window.scrollTo({
-                    top: topPos - 100,
+                    top: topPos - 70,
                     behavior: "smooth",
                   });
                 }
@@ -65,7 +65,7 @@ const Header = () => {
                   var topPos = div.offsetTop;
 
                   window.scrollTo({
-                    top: topPos - 100,
+                    top: topPos - 70,
                     behavior: "smooth",
                   });
                 }
