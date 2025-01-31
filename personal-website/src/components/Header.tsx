@@ -1,7 +1,7 @@
 import { FaLinkedin } from "react-icons/fa6";
 import "./Header.css";
 import { FaGithub } from "react-icons/fa";
-import { LuSun } from "react-icons/lu";
+// import { LuSun } from "react-icons/lu";
 
 const Header = () => {
   return (
@@ -57,6 +57,7 @@ const Header = () => {
               Projects
             </button>
             <button
+              id="resume-nav"
               className="nav-item"
               onClick={() => {
                 let div = document.getElementById("resume");
@@ -73,7 +74,49 @@ const Header = () => {
             >
               Resume
             </button>
+            <button
+              id="timeline-nav"
+              className="nav-item"
+              onClick={() => {
+                let div = document.getElementById("timeline-button");
+
+                if (div) {
+                  var topPos = div.offsetTop;
+
+                  window.scrollTo({
+                    top: topPos - 70,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+            >
+              My Timeline
+            </button>
           </div>
+          {/* <div className="hamburger-menu">
+            <button
+              className="icon-button"
+              onClick={() => {
+                setShowMenu(true);
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12h18"></path>
+                <path d="M3 18h18"></path>
+                <path d="M3 6h18"></path>
+              </svg>
+            </button>
+          </div> */}
           <div className="header-icons">
             <button
               className="icon-button"
