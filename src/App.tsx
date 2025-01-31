@@ -108,7 +108,10 @@ function App() {
             <hr className="divider" />- Resume -
           </span>
           {showResume && (
-            <embed className="resume" src="/Owen_C_Resume_2025.pdf" />
+            <embed
+              className="resume"
+              src="/personal-website/Owen_C_Resume_2025.pdf"
+            />
           )}
         </div>
 
