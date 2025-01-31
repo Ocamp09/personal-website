@@ -15,10 +15,6 @@ interface Project {
   demo?: string;
 }
 
-interface List {
-  projects: Project[];
-}
-
 function App() {
   const projects = {
     projects: [

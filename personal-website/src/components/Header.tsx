@@ -1,7 +1,7 @@
 import { FaLinkedin } from "react-icons/fa6";
 import "./Header.css";
 import { FaGithub } from "react-icons/fa";
-import { LuSun } from "react-icons/lu";
+// import { LuSun } from "react-icons/lu";
 
 const Header = () => {
   return (
