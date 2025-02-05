@@ -13,6 +13,7 @@ interface Project {
   publication?: string;
   about?: string;
   demo?: string;
+  techStack: Array<string>;
 }
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           "A personal website designed to get feedback and improve my skills",
         repo: "https://github.com/Ocamp09/personal-website",
         updated: "Jan 2025",
+        techStack: ["vite", "react", "ts"],
       },
       {
         name: "Compassion Translator Portal",
@@ -31,6 +33,7 @@ function App() {
           "A project I worked on as a Summer intern, created from scratch",
         demo: "https://youtu.be/HSl--roXX6U",
         updated: "Aug 2022",
+        techStack: ["react", "js", "sql", "go"],
       },
       {
         name: "My Master's Thesis",
@@ -40,6 +43,7 @@ function App() {
         demo: "https://youtu.be/sahVAYYfPXU",
         publication: "https://ieeexplore.ieee.org/document/10553424",
         updated: "May 2024",
+        techStack: ["react", "js", "sql", "solidity"],
       },
       {
         name: "Web Services Final Project",
@@ -48,12 +52,14 @@ function App() {
         repo: "https://github.com/Ocamp09/school-code/tree/main/cse451-campbeo2-web-main/L_final",
         demo: "https://youtu.be/TtXr-W1J9Nk",
         updated: "May 2023",
+        techStack: ["laravel", "php", "lambda", "js", "dynamo"],
       },
       {
         name: "My First Website!",
         description: "The first website I ever made in an intro web dev class",
         repo: "https://github.com/Ocamp09/school-code/tree/main/cse383_projects-master/finalProject",
         updated: "May 2021",
+        techStack: ["js", "html"],
       },
     ],
   };
