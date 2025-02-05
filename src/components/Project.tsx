@@ -1,5 +1,17 @@
 import "./Project.css";
 import React from "react";
+import { FaReact, FaHtml5, FaLaravel } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
+import { IoLogoJavascript } from "react-icons/io5";
+import {
+  SiTypescript,
+  SiPhp,
+  SiSolidity,
+  SiAwslambda,
+  SiAmazondynamodb,
+  SiVite,
+  SiMysql,
+} from "react-icons/si";
 
 interface ProjectProps {
   key: number;
@@ -11,6 +23,7 @@ interface ProjectProps {
     publication?: string;
     about?: string;
     demo?: string;
+    techStack: Array<string>;
   };
 }
 
@@ -83,6 +96,37 @@ const Demo: React.FC<ButtonProps> = ({ item }) => {
 };
 
 const Project: React.FC<ProjectProps> = ({ key, project }) => {
+  const activeIcons = project.techStack;
+
+  const icons: { [key: string]: React.ComponentType } = {
+    react: FaReact,
+    js: IoLogoJavascript,
+    solidity: SiSolidity,
+    php: SiPhp,
+    ts: SiTypescript,
+    sql: SiMysql,
+    html: FaHtml5,
+    laravel: FaLaravel,
+    lambda: SiAwslambda,
+    dynamo: SiAmazondynamodb,
+    vite: SiVite,
+    go: FaGolang,
+  };
+
+  const iconColor: { [key: string]: string } = {
+    react: "#61dbfb",
+    js: "#F7DF1E",
+    solidity: "white",
+    php: "white",
+    ts: "#007acc",
+    sql: "#00758F",
+    html: "#e34c26",
+    laravel: "#F05340",
+    lambda: "#f37b05",
+    dynamo: "white",
+    vite: "yellow",
+    go: "white",
+  };
   if (!project.description) {
     project.description = "See the item's README for more info";
   }
@@ -100,6 +144,19 @@ const Project: React.FC<ProjectProps> = ({ key, project }) => {
         <Publication item={project.publication} />
       </div>
       <p className="date">Last updated: {project.updated}</p>
+      <div className="tech-stack">
+        {activeIcons.map((iconKey) => {
+          const IconComponent = icons[iconKey];
+          return IconComponent ? (
+            <IconComponent
+              key={iconKey}
+              size={24}
+              color={iconColor[iconKey]}
+              className="tech-stack-icon"
+            />
+          ) : null;
+        })}
+      </div>
     </div>
   );
 };
