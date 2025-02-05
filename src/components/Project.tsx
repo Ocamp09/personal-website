@@ -31,6 +31,14 @@ interface ButtonProps {
   item?: string;
 }
 
+type IconComponentProps = {
+  size?: number;
+  color?: string;
+  className?: string;
+};
+
+type IconComponentType = React.ComponentType<IconComponentProps>;
+
 const Repo: React.FC<ButtonProps> = ({ item }) => {
   if (item) {
     return (
@@ -98,7 +106,7 @@ const Demo: React.FC<ButtonProps> = ({ item }) => {
 const Project: React.FC<ProjectProps> = ({ key, project }) => {
   const activeIcons = project.techStack;
 
-  const icons: { [key: string]: React.ComponentType } = {
+  const icons: { [key: string]: IconComponentType } = {
     react: FaReact,
     js: IoLogoJavascript,
     solidity: SiSolidity,
@@ -127,6 +135,7 @@ const Project: React.FC<ProjectProps> = ({ key, project }) => {
     vite: "yellow",
     go: "white",
   };
+
   if (!project.description) {
     project.description = "See the item's README for more info";
   }
