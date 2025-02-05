@@ -1,0 +1,6 @@
+@media (max-width: 425px) {
+  .timeline-text {
+    overflow: auto;
+    width: 100%;
+  }
+}
