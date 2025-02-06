@@ -35,6 +35,7 @@ type IconComponentProps = {
   size?: number;
   color?: string;
   className?: string;
+  ariaLabel?: string;
 };
 
 type IconComponentType = React.ComponentType<IconComponentProps>;
@@ -136,6 +137,21 @@ const Project: React.FC<ProjectProps> = ({ key, project }) => {
     go: "white",
   };
 
+  const iconAlt: { [key: string]: string } = {
+    react: "React",
+    js: "JavaScript",
+    solidity: "Solidity",
+    php: "PHP",
+    ts: "TypeScript",
+    sql: "SQL",
+    html: "HTML",
+    laravel: "Laravel",
+    lambda: "Lambda",
+    dynamo: "DynamoDB",
+    vite: "Vite",
+    go: "GoLang",
+  };
+
   if (!project.description) {
     project.description = "See the item's README for more info";
   }
@@ -162,6 +178,7 @@ const Project: React.FC<ProjectProps> = ({ key, project }) => {
               size={24}
               color={iconColor[iconKey]}
               className="tech-stack-icon"
+              ariaLabel={iconAlt[iconKey]}
             />
           ) : null;
         })}
