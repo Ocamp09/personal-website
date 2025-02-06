@@ -11,6 +11,7 @@ import {
   SiAmazondynamodb,
   SiVite,
   SiMysql,
+  SiExpo,
 } from "react-icons/si";
 
 interface ProjectProps {
@@ -64,7 +65,7 @@ const Publication: React.FC<ButtonProps> = ({ item }) => {
           window.open(item);
         }}
       >
-        Publication
+        Journal
       </button>
     );
   }
@@ -119,6 +120,7 @@ const Project: React.FC<ProjectProps> = ({ key, project }) => {
     dynamo: SiAmazondynamodb,
     vite: SiVite,
     go: FaGolang,
+    expo: SiExpo,
   };
 
   const iconColor: { [key: string]: string } = {
