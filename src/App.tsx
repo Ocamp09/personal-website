@@ -26,6 +26,8 @@ function App() {
         repo: "https://github.com/Ocamp09/personal-website",
         updated: "Jan 2025",
         techStack: ["vite", "react", "ts"],
+        about:
+          "https://github.com/Ocamp09/personal-website/blob/main/README.md",
       },
       {
         name: "Compassion Translator Portal",
@@ -44,6 +46,17 @@ function App() {
         publication: "https://ieeexplore.ieee.org/document/10553424",
         updated: "May 2024",
         techStack: ["react", "js", "sql", "solidity"],
+        about: "https://github.com/sbhunia/scefsta/blob/main/README.md",
+      },
+      {
+        name: "Lifestyle",
+        description:
+          "An under-development project to learn React Native and mobile development",
+        repo: "https://github.com/Ocamp09/lifestyle",
+        demo: "https://ocamp09-lifestyle--19nnta4xbw.expo.app/",
+        updated: "Feb 2025",
+        techStack: ["expo", "react", "js"],
+        about: "https://github.com/Ocamp09/lifestyle/blob/main/README.md",
       },
       {
         name: "Web Services Final Project",
@@ -53,13 +66,18 @@ function App() {
         demo: "https://youtu.be/TtXr-W1J9Nk",
         updated: "May 2023",
         techStack: ["laravel", "php", "lambda", "js", "dynamo"],
+        about:
+          "https://github.com/Ocamp09/school-code/blob/main/cse451-campbeo2-web-main/L_final/README.md",
       },
       {
         name: "My First Website!",
-        description: "The first website I ever made in an intro web dev class",
+        description:
+          "The first website I ever made in an intro web development class",
         repo: "https://github.com/Ocamp09/school-code/tree/main/cse383_projects-master/finalProject",
         updated: "May 2021",
         techStack: ["js", "html"],
+        about:
+          "https://github.com/Ocamp09/school-code/blob/main/cse383_projects-master/finalProject/README.md",
       },
     ],
   };

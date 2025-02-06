@@ -39,6 +39,10 @@
   word-wrap: break-word;
   display: block;
   line-height: 1.5em;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .name {
@@ -53,10 +57,15 @@
   text-overflow: ellipsis;
   word-wrap: break-word;
   display: block;
+  height: 4.5rem;
 }
 
 p {
   margin-block-start: 0em;
+}
+
+.tech-stack {
+  padding-bottom: 0.5rem;
 }
 
 .tech-stack-icon {

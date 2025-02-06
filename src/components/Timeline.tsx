@@ -4,79 +4,112 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import "./Timeline.css";
 
 const Timeline = () => {
   return (
     <div>
       <TimelineItem>
-        <TimelineOppositeContent>Aug 2020</TimelineOppositeContent>
+        <TimelineOppositeContent className="timeline-text">
+          Aug 2020
+        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Started @ Miami University</TimelineContent>
+        <TimelineContent className="timeline-text">
+          Started @ Miami University
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
-        <TimelineOppositeContent>May 2022</TimelineOppositeContent>
+        <TimelineOppositeContent className="timeline-text">
+          May 2022
+        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>1st Internship at Compassion</TimelineContent>
+        <TimelineContent className="timeline-text">
+          1st Internship at Compassion
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
-        <TimelineOppositeContent>May 2023</TimelineOppositeContent>
+        <TimelineOppositeContent className="timeline-text">
+          May 2023
+        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Graduated early w/ Bachelor's degree</TimelineContent>
+        <TimelineContent className="timeline-text">
+          Graduated early w/ Bachelor's degree
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
-        <TimelineOppositeContent>May 2023</TimelineOppositeContent>
+        <TimelineOppositeContent className="timeline-text">
+          May 2023
+        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Internship w/ London Computer Systems</TimelineContent>
+        <TimelineContent className="timeline-text">
+          Internship w/ London Computer Systems
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
-        <TimelineOppositeContent>Aug 2023</TimelineOppositeContent>
+        <TimelineOppositeContent className="timeline-text">
+          Aug 2023
+        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Chosen as Graduate Assistant</TimelineContent>
+        <TimelineContent className="timeline-text">
+          Chosen as Graduate Assistant
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
-        <TimelineOppositeContent>Apr 2024</TimelineOppositeContent>
+        <TimelineOppositeContent className="timeline-text">
+          Apr 2024
+        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Published journal at SysCon</TimelineContent>
+        <TimelineContent className="timeline-text">
+          Published journal at SysCon
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
-        <TimelineOppositeContent>May 2024</TimelineOppositeContent>
+        <TimelineOppositeContent className="timeline-text">
+          May 2024
+        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Graduated w/ Master's in 4 years</TimelineContent>
+        <TimelineContent className="timeline-text">
+          Graduated w/ Master's in 4 years
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot variant="outlined" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>2nd internship w/ Compassion</TimelineContent>
+        <TimelineContent className="timeline-text">
+          2nd internship w/ Compassion
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
-        <TimelineOppositeContent>Aug 2024</TimelineOppositeContent>
+        <TimelineOppositeContent className="timeline-text">
+          Aug 2024
+        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
         </TimelineSeparator>
-        <TimelineContent>
+        <TimelineContent className="timeline-text">
           Hired as Software Engineer for Air Force
         </TimelineContent>
       </TimelineItem>
