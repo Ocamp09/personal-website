@@ -57,6 +57,23 @@ const Header = () => {
               Projects
             </button>
             <button
+              className="nav-item"
+              onClick={() => {
+                const div = document.getElementById("feedback");
+
+                if (div) {
+                  var topPos = div.offsetTop;
+
+                  window.scrollTo({
+                    top: topPos - 70,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+            >
+              Feedback
+            </button>
+            <button
               id="resume-nav"
               className="nav-item"
               onClick={() => {

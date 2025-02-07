@@ -23,8 +23,8 @@ const About = () => {
           </p>
 
           <p>
-            Feel free to email me any feedback, or if you are interested in my
-            skills!
+            Feel free to leave me feedback below, or email me if you are
+            interested in my skills!
           </p>
         </div>
       </div>
