@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Project from "./components/Project";
 import { useState } from "react";
 import Timeline from "./components/Timeline";
+import { FeedbackForm } from "./components/FeedbackForm";
 
 interface Project {
   name: string;
@@ -84,6 +85,7 @@ function App() {
 
   const [showAbout, setShowAbout] = useState(true);
   const [showProjects, setShowProjects] = useState(true);
+  const [showFeedback, setShowFeedback] = useState(true);
   const [showResume, setShowResume] = useState(true);
   const [showTimeline, setShowTimeline] = useState(true);
 
@@ -121,6 +123,16 @@ function App() {
             ))}
           </div>
         )}
+        <span
+          className="card"
+          id="feedback"
+          onClick={() => {
+            setShowFeedback(!showFeedback);
+          }}
+        >
+          <hr className="divider" />- Feedback -
+        </span>
+        {showFeedback && <FeedbackForm />}
         <div className="resume-div">
           <span
             className="card"
