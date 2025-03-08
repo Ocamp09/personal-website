@@ -44,7 +44,7 @@ function App() {
           "A blockchain based healthcare transportation system w/ React UI",
         repo: "https://github.com/sbhunia/scefsta",
         demo: "https://youtu.be/sahVAYYfPXU",
-        publication: "https://ieeexplore.ieee.org/document/10553424",
+        // publication: "https://ieeexplore.ieee.org/document/10553424",
         updated: "May 2024",
         techStack: ["react", "js", "sql", "solidity"],
         about: "https://github.com/sbhunia/scefsta/blob/main/README.md",
@@ -62,7 +62,7 @@ function App() {
       {
         name: "Web Services Final Project",
         description:
-          "A final project for a class using OAuth, CAS, PhP, Laravel, Lambda, and AWS Dynamo",
+          "A final project for a class using OAuth, SSO, PhP, Laravel, Lambda, and AWS Dynamo",
         repo: "https://github.com/Ocamp09/school-code/tree/main/cse451-campbeo2-web-main/L_final",
         demo: "https://youtu.be/TtXr-W1J9Nk",
         updated: "May 2023",
