@@ -31,6 +31,18 @@ function App() {
           "https://github.com/Ocamp09/personal-website/blob/main/README.md",
       },
       {
+        name: "Fairway Ink",
+        description:
+          "A passion project dedicated to creating custom golf ball stencils w/ a fully automated backend",
+        repo: "https://github.com/Ocamp09/fairway-ink",
+        apiRepo: "https://github.com/Ocamp09/fairway-ink-api",
+        demo: "https://fairway-ink.com",
+        updated: "May 2025",
+        techStack: ["vite", "react", "js", "go", "sql", "python", "aws"],
+        about:
+          "https://github.com/Ocamp09/personal-website/blob/main/README.md",
+      },
+      {
         name: "Compassion Translator Portal",
         description:
           "A project I worked on as a Summer intern, created from scratch",
