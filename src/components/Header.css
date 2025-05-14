@@ -71,6 +71,10 @@
   outline: none;
 }
 
+#timeline-nav {
+  display: none;
+}
+
 /* .hamburger-menu {
   display: none;
 } */
@@ -110,11 +114,7 @@
   }
 }
 
-#timeline-nav {
-  display: none;
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px), screen and (max-height: 1200px) {
   #timeline-nav {
     display: block;
   }
