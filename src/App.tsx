@@ -39,8 +39,7 @@ function App() {
         demo: "https://fairway-ink.com",
         updated: "May 2025",
         techStack: ["vite", "react", "js", "go", "sql", "python", "aws"],
-        about:
-          "https://github.com/Ocamp09/personal-website/blob/main/README.md",
+        about: "https://github.com/Ocamp09/fairway-ink/blob/main/README.md",
       },
       {
         name: "Compassion Translator Portal",
